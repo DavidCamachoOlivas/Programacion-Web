@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex personal - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacanos.html">Contactanos</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactanos</h1>
+        
+        <form action="contacanos.html" method="get">
+            <fieldset>
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre:" required>
+                <br>
+
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" name="email" placeholder="Ingresa tu correo:" required>
+                <br>
+
+                <label for="asunto">Asunto</label>
+                <br>
+                <textarea id="asunto" cols="50" rows="10" name="Asunto" placeholder="Ingresa el motivo de contacto:"></textarea>
+                <br>
+                <label for="fav">Pokemon favorito:</label>
+                <br>
+                <input id="fav" list="pokemonFav" name="fav">
+                <datalist id="pokemonFav">
+                    <option value="Porygon"></option>
+                    <option value="Mienshao"></option>
+                    <option value="Togepi"></option>
+                </datalist>
+                <br>
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <optgroup label="América">
+                        <option value="mexico">México</option>
+                        <option value="usa">Estados Unidos</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="españa">España</option>
+                        <option value="francia">Francia</option>
+                    </optgroup>
+                </select>
+                <br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        
+    </main>
+    
+</body>
+</html>
