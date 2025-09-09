@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'pokemonsolid', sans-serif;
+    src: url(../fonts/pokemonsolid.ttf);
+}
+*{
+    color: white;
+    background-color: aliceblue;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-family: 'pokemonsolid', 'Times new roman', sans-serif;
+}
+p{
+    color: white;
+    font-size: small;
+    border-width: 2px;
+    
+}
+.indice{
+    color: black;
+    background-color: white;
+}
+
