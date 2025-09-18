@@ -16,7 +16,7 @@
 ## U2. CSS
 * Act 1 - [Ejercicio #1 - Formato de texto, fuentes, fondos y borderTarea](CSS/Ejercicio1-CSS/html/index.html)
 * Act 2 - [Ejercicio #2 - Tarjeta](CSS/Ejercicio2-CSS/index.html)
-* Act 3
+* Act 3 - [Ejercicio #3 - Header sticky](CSS/Ejercicio3-CSS/index.html)
 * Act 4
 * Act 5
 ## U3. JavaScript
