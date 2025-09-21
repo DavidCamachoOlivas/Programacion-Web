@@ -31,12 +31,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    border-bottom: 2px solid black;
 }
 
 .logo {
     font-family: 'InknutAntiqua';
     font-size: 22px;
     font-weight: bold;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo a:visited{
+    color: black;
 }
 
 .hero {
@@ -58,6 +67,8 @@ header {
   text-align: center;
 }
 
+
+
 nav {
     flex: 1;
     display: flex;
@@ -73,4 +84,63 @@ nav a {
     border-radius: 3px;
 }
 
+/* ---------------------------------Contactanos--------------------------------- */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+fieldset h1{
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+input,textarea,select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.boton{
+    text-align: right;
+}
+.submit-btn {
+    padding: 15px 70px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
