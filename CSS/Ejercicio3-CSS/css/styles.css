@@ -4,6 +4,10 @@
     font-weight: bold;
     font-style: bold;
 }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 header {
     position: sticky;
     top: 0;
@@ -14,7 +18,9 @@ header {
 
 .top-bar {
     display: flex;
+    min-height: 50px;
     justify-content: flex-end;
+    align-items: center;
     padding: 10px 40px;
     font-size: 14px;
     border-bottom: 2px solid black;
@@ -22,8 +28,13 @@ header {
 
 .top-bar a {
     margin-left: 20px;
+    padding: 3px 3px;
     text-decoration: none;
     color: black;
+}
+.top-bar a:hover{
+    background-color: #999;
+    border-radius: 5%;
 }
 
 .main-bar {
@@ -42,6 +53,7 @@ header {
 
 .logo a{
     text-decoration: none;
+    color: black;
 }
 
 .logo a:visited{
@@ -67,21 +79,102 @@ header {
   text-align: center;
 }
 
-
-
 nav {
-    flex: 1;
+    width: 300px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #696767;
 }
 
-nav a {
+nav ul{
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+nav li{
+    position: relative;
+    margin: 4%;
+}
+nav a{
+    color: white;
     text-decoration: none;
-    color: black;
-    padding: 8px 15px;
-    background-color: #e6e6e6;
-    border-radius: 3px;
+}
+
+.submenu {
+    display: none; 
+    position: absolute;
+    top: 110%; 
+    left: 0;
+    background: #555;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.submenu li a:hover {
+    background: #222;
+}
+
+.menu-li:hover .submenu {
+    display: block;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 20%;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px lightgray;
+    padding: 2%;
+    margin: 2%;
+}
+
+.card-button{
+    padding: 10px 20px;
+    background-color:#333;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+.card-button:hover {
+    background-color: #696767;
+    cursor: pointer;
+}
+
+.title{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.basics{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* ---------------------------------Contactanos--------------------------------- */
