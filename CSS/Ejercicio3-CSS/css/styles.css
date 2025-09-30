@@ -4,6 +4,7 @@
     font-weight: bold;
     font-style: bold;
 }
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -174,10 +175,10 @@ nav a{
 .basics{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
-/* ---------------------------------Contactanos--------------------------------- */
+/* --------------------------------- Contactanos --------------------------------- */
 form {
     background-color: #ffffff;
     padding: 30px;
@@ -237,3 +238,50 @@ input,textarea,select{
 .submit-btn:hover {
     background-color: #333;
 }
+
+/*--------------------------------- Women-Section ---------------------------------*/
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "sidebar main";
+  grid-template-columns: 1fr 3fr; 
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.filters {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  padding: 20px;
+  border: 1px solid #555;
+}
+
+.filters-list{
+    list-style: none;
+}
+
+.filters .filters-list .filter-list-item{
+    display: block;
+    margin: 2px;
+}
+
+.women-main-content {
+  grid-area: main;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #555;
+}
+
+.women-card-content{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.women-title{
+    display:inline-block;
+}
+
