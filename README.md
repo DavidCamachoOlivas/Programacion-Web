@@ -19,6 +19,8 @@
 * Act 3 - [Ejercicio #3 - Header sticky](CSS/Ejercicio3-CSS/html/index.html)
 * Act 4 - [Ejercicio #4 - Formulario con estilos, pseudoelementos y pseudoclases](CSS/Ejercicio3-CSS/html/contact-us.html)
 * Act 5 - [Ejercicio #5 - Sitio con tarjetas (Flex)](CSS/Ejercicio3-CSS/html/index.html)
+* Act 7 - [Ejercicio #7 - CSS Grid](CSS/Ejercicio3-CSS/html/women-section.html)
+* Act 8 - [Ejercicio #8 - Sitio responsivo](CSS/Ejercicio3-CSS/html/index.html)
 ## U3. JavaScript
 * Act 1
 * Act 2

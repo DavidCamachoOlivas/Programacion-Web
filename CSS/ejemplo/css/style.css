@@ -1,0 +1,135 @@
+:root {
+    --primary-color: cornflowerblue;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Layout principal con grid */
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+}
+
+nav {
+    background: #f0f0f0;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 1px solid gray;
+}
+
+.list {
+    list-style: none;
+    padding-top: 15px;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d8d8d8;
+    border-radius: 8px;
+}
+
+.list-item:hover {
+    background-color: #bfbebe;
+    transition: background-color 0.4s;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    background: white;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 20;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        z-index: 10;
+        padding-top: 60px;
+        transform: translateX(-100%);
+    }
+
+    .menu-toggle:checked ~ .container nav {
+        transform: translateX(0);
+    }
+
+}
