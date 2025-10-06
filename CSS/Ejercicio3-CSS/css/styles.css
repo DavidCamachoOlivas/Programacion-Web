@@ -50,64 +50,20 @@ header {
     display:none;
 }
 
-.hidden{
-    display: none;
-}
-
 .menu-btn {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 25%;
     left: 1rem;
     background-color: white;
     border-radius: 4px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    color: var(--primary-color);
     font-weight: bold;
     border: 1px solid gray;
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
 
-    .top-bar{
-       display: none;
-    }
-
-    .menu-btn {
-        display: block;
-        z-index: 20;
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 200px;
-        height: 100%;
-        z-index: 10;
-        padding-top: 60px;
-        transform: translateX(-100%);
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-
-    .menu-toggle:checked ~ nav{
-        transform: translateX(0);
-    }
-    
-
-    .main-bar{
-        justify-content: center;
-    }
-
-}
 
 .logo {
     font-family: 'InknutAntiqua';
@@ -170,7 +126,7 @@ nav a{
 
 .submenu {
     display: none; 
-    position: absolute;
+    position:absolute;
     top: 110%; 
     left: 0;
     background: #555;
@@ -193,6 +149,58 @@ nav a{
 
 .menu-li:hover .submenu {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .top-bar{
+       display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 20;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 10;
+        padding-top: 60px;
+        transform: translateX(-100%);
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        padding-inline-start:10px;
+    }
+
+    nav li{
+        width: 100%;
+    }
+
+
+    .menu-toggle:checked ~ nav{
+        transform: translateX(0);
+    }
+    
+
+    .main-bar{
+        justify-content: center;
+    }
+
+    .submenu{
+        display:block;
+        position:relative;
+        top: 0;
+    }
+
 }
 
 .card-img{
