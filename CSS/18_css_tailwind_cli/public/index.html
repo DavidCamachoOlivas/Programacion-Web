@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ejemplo con DaisyUI</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <nav class="navbar bg-blue-600 text-white px-4">
+    <div class="navbar-start">
+      <!-- Menú móvil -->
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-700 rounded-box w-52">
+          <li><a>Inicio</a></li>
+          <li><a>Servicios</a></li>
+          <li><a>Contacto</a></li>
+        </ul>
+      </div>
+      <a class="text-2xl font-semibold">Mi Sitio</a>
+    </div>
+
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Inicio</a></li>
+        <li><a>Servicios</a></li>
+        <li><a>Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero bg-base-200 text-center py-16">
+    <div class="hero-content flex-col">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a mi sitio con DaisyUI</h1>
+      <p class="text-gray-600 text-lg mb-6">Diseño moderno y completamente responsivo</p>
+      <a href="#" class="btn btn-primary">Saber más</a>
+    </div>
+  </header>
+
+  <section class="flex-grow py-12 px-4 bg-white">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="card bg-base-100 shadow-md hover:shadow-xl transition">
+        <div class="card-body">
+          <h3 class="card-title text-blue-700">Tailwind CSS</h3>
+          <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center, and rotate-90 that can be composed to build any design, directly in your markup.</p>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-md hover:shadow-xl transition">
+        <div class="card-body">
+          <h3 class="card-title text-blue-700">Supported by the best</h3>
+          <p>Tailwind is supported by incredible partners and sponsors who make it possible for a team of talented designers and engineers to maintain the framework full-time.</p>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-md hover:shadow-xl transition">
+        <div class="card-body">
+          <h3 class="card-title text-blue-700">Built for the modern web</h3>
+          <p>Tailwind is unapologetically modern, and takes advantage of all the latest and greatest CSS features to make the developer experience as enjoyable as possible.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer footer-center bg-blue-600 text-white p-4">
+    <p>© 2025 Mi Sitio Web - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'InknutAntiqua';
-    src: url(/CSS/Ejercicio3-CSS/fonts/Inknut_Antiqua/InknutAntiqua-Bold.ttf);
+    src: url(/CSS/Ejercicio3-CSS/public/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf);
     font-weight: bold;
     font-style: bold;
 }
+@import "tailwindcss";
+@plugin "daisyui";
 
 *{
     margin: 0;
@@ -84,7 +86,7 @@ header {
   position: relative;
   width: 100%;
   height: 500px;
-  background-image: url(../img/STREETTYLE_2023_3.webp); 
+  background-image: url(../..//public/img/STREETTYLE_2023_3.webp); 
   background-size: cover;
   background-position: center;
   display: flex;
