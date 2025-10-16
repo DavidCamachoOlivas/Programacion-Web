@@ -23,7 +23,7 @@
 * Act 8 - [Ejercicio #8 - Sitio responsivo](CSS/Ejercicio3-CSS/src/html/index.html)
 * Examen - [Examen - Sitio Web](CSS/Ejercicio3-CSS/src/html/women-section.html)
 ## U3. JavaScript
-* Act 1
+* Act 1 - [Ejercicio 1 - Calculadora](JavaScript/Ejercicio1/index.html)
 * Act 2
 * Act 3
 * Act 4
