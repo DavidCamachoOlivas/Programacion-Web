@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora simple</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f0f0f0;
+    }
+    .calculadora {
+      display: inline-block;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      margin-top: 20px;
+    }
+    input {
+      width: 210px;
+      height: 40px;
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      margin: 3px;
+      background: dodgerblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: royalblue;
+    }
+    #historial {
+      background: white;
+      margin: 20px auto;
+      width: 250px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Calculadora con historial</h2>
+
+  <div class="calculadora">
+    <input type="text" id="pantalla" readonly><br>
+
+    <button onclick="presionar('1')">1</button>
+    <button onclick="presionar('2')">2</button>
+    <button onclick="presionar('3')">3</button>
+    <button onclick="presionar('/')">/</button><br>
+
+    <button onclick="presionar('4')">4</button>
+    <button onclick="presionar('5')">5</button>
+    <button onclick="presionar('6')">6</button>
+    <button onclick="presionar('*')">*</button><br>
+
+    <button onclick="presionar('7')">7</button>
+    <button onclick="presionar('8')">8</button>
+    <button onclick="presionar('9')">9</button>
+    <button onclick="presionar('-')">-</button><br>
+
+    <button onclick="presionar('0')">0</button>
+    <button onclick="calcular()">=</button>
+    <button onclick="borrar()">C</button>
+    <button onclick="presionar('+')">+</button>
+  </div>
+
+  <div id="historial">
+    <h3>Historial:</h3>
+    <div id="lista"></div>
+  </div>
+
+  <script>
+    let expresion = "";
+    let pantalla = document.getElementById("pantalla");
+    let lista = document.getElementById("lista");
+
+    function presionar(valor) {
+      expresion += valor;
+      pantalla.value = expresion;
+    }
+
+    function borrar() {
+      expresion = "";
+      pantalla.value = "";
+    }
+
+    function calcular() {
+      try {
+        let resultado = eval(expresion);
+        if (!isFinite(resultado)) throw "error";
+        lista.innerHTML += expresion + "=" + resultado + "<br>";
+        pantalla.value = resultado;
+        expresion = resultado.toString();
+      } catch (e) {
+        pantalla.value = "Error";
+        expresion = "";
+      }
+    }
+
+    // Soporte básico para teclado
+    document.addEventListener("keydown", function(e) {
+      if ("0123456789+-*/.".includes(e.key)) {
+        presionar(e.key);
+      } else if (e.key === "Enter") {
+        calcular();
+      } else if (e.key === "c" || e.key === "C") {
+        borrar();
+      }
+    });
+  </script>
+</body>
+</html>
