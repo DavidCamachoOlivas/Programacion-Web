@@ -86,6 +86,7 @@
     let expresion = "";
     let pantalla = document.getElementById("pantalla");
     let lista = document.getElementById("lista");
+    let historial = [];
 
     function presionar(valor) {
       expresion += valor;
@@ -110,7 +111,6 @@
       }
     }
 
-    // Soporte básico para teclado
     document.addEventListener("keydown", function(e) {
       if ("0123456789+-*/.".includes(e.key)) {
         presionar(e.key);
