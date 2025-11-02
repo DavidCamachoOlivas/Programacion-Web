@@ -27,7 +27,7 @@
 * Act 2
 * Act 3 - [Ejercicio 3 - Calculadora visual](JavaScript/Ejercicio3/index.html)
 * Act 4 - [Ejercicio 4 - Lista de tareas](JavaScript/Ejercicio4/index.html)
-* Act 5
+* Act 5 - [Ejercicio 5 - Modules](JavaScript/Ejercicio4/index.html)
 ## U4. Servidores
 * Act 1
 * Act 2
